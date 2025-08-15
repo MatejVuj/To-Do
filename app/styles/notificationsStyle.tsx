@@ -46,29 +46,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
   },
-  soundRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 10 },
-  soundLabel: { flex: 1, fontSize: 16, color: Colors.textLightSecondary },
-
-  uploadButton: {
-    flexDirection: 'row',
-    backgroundColor: Colors.primary,
-    paddingVertical: 8,
-    paddingHorizontal: 12,
-    borderRadius: 5,
-    alignItems: 'center',
-    marginRight: 10,
-  },
-  uploadButtonText: { color: Colors.white, marginLeft: 5, fontSize: 14 },
-
-  testButton: {
-    flexDirection: 'row',
-    backgroundColor: Colors.secondary,
-    paddingVertical: 8,
-    paddingHorizontal: 12,
-    borderRadius: 5,
-    alignItems: 'center',
-  },
-  testButtonText: { color: Colors.white, marginLeft: 5, fontSize: 14 },
 
   /* ---------- task item ---------- */
   taskItem: {
@@ -136,29 +113,6 @@ const darkStyles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
   },
-  soundRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 10 },
-  soundLabel: { flex: 1, fontSize: 16, color: Colors.textDarkSecondary },
-
-  uploadButton: {
-    flexDirection: 'row',
-    backgroundColor: Colors.primaryDark,
-    paddingVertical: 8,
-    paddingHorizontal: 12,
-    borderRadius: 5,
-    alignItems: 'center',
-    marginRight: 10,
-  },
-  uploadButtonText: { color: Colors.black, marginLeft: 5, fontSize: 14 },
-
-  testButton: {
-    flexDirection: 'row',
-    backgroundColor: Colors.secondary,
-    paddingVertical: 8,
-    paddingHorizontal: 12,
-    borderRadius: 5,
-    alignItems: 'center',
-  },
-  testButtonText: { color: Colors.black, marginLeft: 5, fontSize: 14 },
 
   taskItem: {
     flexDirection: 'row',
