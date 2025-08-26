@@ -10,6 +10,14 @@ export const generateTags = (title, description) => {
   return [...new Set(words)];
 };
 
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: true,
+    shouldSetBadge: true,
+  }),
+});
+
 export const saveTaskToFirebase = async (taskData) => {
   const user = auth.currentUser;
   if (!user) return;
@@ -80,6 +88,7 @@ export const scheduleTaskNotification = async (dueDateTime, taskId, taskDetails)
           title: `Reminder: ${taskDetails.title}`,
           body: taskDetails.description || 'Your task is due soon.',
           data: { taskId: taskId },
+          sound: true,
         },
         trigger: triggerDate,
       });

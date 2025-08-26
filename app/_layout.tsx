@@ -6,14 +6,6 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useUserPreferences } from "@/utilities/hooks/useUserPreferences"; // Importiramo hook
 import * as Notifications from "expo-notifications"
 
-Notifications.setNotificationHandler({
-  handleNotification: async () => ({
-    shouldShowAlert: true,
-    shouldPlaySound: true,
-    shouldSetBadge: true,
-  }),
-});
-
 const StackLayout = () => {
   
   const { preferences } = useUserPreferences();

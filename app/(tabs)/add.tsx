@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { View, Text, SafeAreaView, Alert, Platform } from 'react-native';
 import { router } from 'expo-router';
-import * as Notifications from 'expo-notifications';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { styles, darkStyles } from '../../utilities/styles/addStyle';

@@ -66,6 +66,7 @@ const NotificationsScreen = () => {
       content: {
         title: "Test Notification",
         body: 'Testing',
+        sound: true,
       },
       trigger: { seconds: 2 },
     });
